@@ -2011,11 +2011,362 @@
               #Using semicolon
               first_name = "Ahmed"; last_name = "Harbi"
             </code></pre>
-            <li>The code will <em>rund the same</em> in both cases</li>
+            <li>The code will <em>run the same</em> in both cases</li>
           </ul>
         </dd>
       </dl>
     </div>
     <h2>Module 10: Working with Numbers, Text, and Dates</h2>
+    <h3>Introduction</h3>
+    <div>
+      <dl>
+        <dd>
+          <ul>
+            <li>In the computer world, numbers can be added, subtracted, etc.,</li>
+            <li>In Python, there are whole numbers <span>integers</span> and numbers with decimal points <span>floats</span></li>
+            <li>Words are stored as strings <span>"A string or characters"</span></li>
+            <li>Python doesn't have a built-in data type for <span>dates and times</span></li>
+            <li>A free module can be imported to use dates and times</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Calculating Numbers with Functions</h3>
+    <div>
+      <dl>
+        <dt>Python <em>functions</em> generally have the <em>syntax</em>:</dt>
+        <dd>
+          <ul>
+            <span>
+              <li><em>variablename</em> = <em>functionname</em>(param[,param])</li>
+            </span>
+            <li>The variable is defined to store what the function <span>returns</span></li>
+            <li>Inside the paranthesis, you can pass one or more values <span>(called parameters)</span> to the function</li>
+            <li>Some functions accept two or more values</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Some <em>Built-in</em> Python Functions for <em>Numbers</em>:</dt>
+        <table>
+          <thead>
+            <th>Built-in Function</th>
+            <th>Purpose</th>
+            <tbody>
+              <tr>
+                <td>abs(x)</td>
+                <td>returns absolute value</td>
+              </tr>
+              <tr>
+                <td>bin(x)</td>
+                <td>Returns a string with the value of x in binary</td>
+              </tr>
+              <tr>
+                <td>float(x)</td>
+                <td>Converts a string or number</td>
+              </tr>
+              <tr>
+                <td>format(x, y)</td>
+                <td>Returns x formatted according to pattern in y</td>
+              </tr>
+              <tr>
+                <td>hex(x)</td>
+                <td>Convert x to hexadecimal, prefixed with 0x</td>
+              </tr>
+              <tr>
+                <td>int(x)</td>
+                <td>Converts x to integer by truncating the decimal portion</td>
+              </tr>
+              <tr>
+                <td>max(x, y, z,...)</td>
+                <td>Return the largest number</td>
+              </tr>
+              <tr>
+                <td>min(x, y, z, ...)</td>
+                <td>Return the smallest number</td>
+              </tr>
+              <tr>
+                <td>oct(x)</td>
+                <td>Convert x to octal number, prefixed with 0o</td>
+              </tr>
+              <tr>
+                <td>round(x, y)</td>
+                <td>Rounds x to y number of decimal places</td>
+              </tr>
+              <tr>
+                <td>str(x)</td>
+                <td>Converts x from number to string</td>
+              </tr>
+              <tr>
+                <td>type(x)</td>
+                <td>Returns a string indicating the data type of x</td>
+              </tr>
+            </tbody>
+          </thead>
+        </table>
+      </dl>
+    </div>
+    <h3>More Math Functions</h3>
+    <div>
+      <dl>
+        <dt>If you need to use functions from the <span>math module</span>, <em>import it near the top</em> of the .py file.</dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Some Functions fro mteh Python <em>Math Module</em></dt>
+        <table>
+          <thead>
+            <th>Function</th>
+            <th>Purpose</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>math.acos(x)</td>
+              <td>arccosine x in radians</td>
+            </tr>
+            <tr>
+              <td>math.atan(x)</td>
+              <td>arctangent of x in radians</td>
+            </tr>
+            <tr>
+              <td>math.atan2(y, x)</td>
+              <td>Converts rectangular coordinates (x,y) to polar coordinates (r,theta)</td>
+            </tr>
+            <tr>
+              <td>math.ceil(x)</td>
+              <td>ceiling of x, smallest integer greater than or equal x</td>
+            </tr>
+            <tr><td>math.cos(x)</td>
+            <td>cosine x</td></tr>
+            <tr>
+              <td>math.degrees(x)</td>
+              <td>Convert angle x from radians to degrees</td>
+            </tr>
+            <tr>
+              <td>math.e</td>
+              <td>mathematical constant <span>e</span></td>
+            </tr>
+            <tr>
+              <td>math.exp(x)</td>
+              <td><span>e</span> raised to the power x</td>
+            </tr>
+            <tr>
+              <td>math.factorial(x)</td>
+              <td>factorial of x</td>
+            </tr>
+            <tr>
+              <td>math.floor(x)</td>
+              <td>floor of x, largest integer less than or equal to x</td>
+            </tr>
+            <tr>
+              <td>math.isnan(x)</td>
+              <td>True is x is not a number</td>
+            </tr>
+            <tr>
+              <td>math.log(x,y)</td>
+              <td>logarithm of x to base y</td>
+            </tr>
+            <tr>
+              <td>math.log2(x)</td>
+              <td>base-2 logarithm of x</td>
+            </tr>
+            <tr>
+              <td>math.pi</td>
+              <td>the mathematical constant pi (3.14..)</td>
+            </tr>
+            <tr>
+              <td>math.pow(x,y)</td>
+              <td>x raised to the power y</td>
+            </tr>
+            <tr>
+              <td>math.radians(x)</td>
+              <td>convert angle x from degrees to radians</td>
+            </tr>
+            <tr>
+              <td>math.sin(x)</td>
+              <td>sine of x</td>
+            </tr>
+            <tr>
+              <td>math.sqrt(x)</td>
+              <td>square root of x</td>
+            </tr>
+            <tr>
+              <td>math.tan(x)</td>
+              <td>tangent of x</td>
+            </tr>
+            <tr>
+              <td>math.tau()</td>
+              <td>mathematical constant tau (6.283185...)</td>
+            </tr>
+          </tbody>
+        </table>
+      </dl>
+    </div>
+    <h3>Formatting Numbers</h3>
+    <div>
+      <dl>
+        <dt>Formatting with <em>f-strings</em></dt>
+        <dd>
+          <ul>
+            <li><em>f-string</em> is the easiet way to format data in Python</li>
+            <pre><code class="language-python">
+              username = "Mohammed"
+              print(f"Hello {username})
+            </code></pre>
+            <li>The output is: Hello Mohammed</li>
+            <li>The text <span>(Hello)</span> is called the <em>literal part</em>, and is displayed literally.</li>
+            <li>Anything in curly braces <span>(username)</span> is the <em>expression part</em>. A placeholder for what will appear when the codes runs
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Showing <em>Dollar</em> Amounts</dt>
+        <dd>
+          <ul>
+            <pre><code class="language-python">
+              quantity = 100
+              unit_price = 14.997
+              print(f"Subtotal: ${quantity * unit_price:,.2f}")
+            </code></pre>
+            <li>Output is: Subtotal: $1,499.70</li>
+            <li>the <span>comma</span> tells Pyton to show commas in thousands places</li>
+            <li><span>.2f</span> means two decimal places</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Formatting <em>Percent</em> Numbers</dt>
+        <dd>
+          <ul>
+            <pre><code class="language-python">
+              sales_tax_rate = 0.065
+              print(f"Sales Tax Rate {sales_tax_rate:.2%}")
+            </code></pre>
+            <li>Output is: Sales Tax Rate 6.50%</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Making <em>Multiline</em> Format Settings</dt>
+        <dd>
+          <ul>
+            <li>Use <em>/n</em> where you want a line break</li>
+            <pre><code class="language-python">
+              user1 = "Ahmed"
+              user2 = "Mohammed"
+              user3 = "Hussam"
+              output = f"{user1}\n{user2}\n{user3}"
+              print(output)
+            </code></pre>
+            <li>The output is: <br>Ahmed <br> Mohammed <br> Hussam
+            </li>
+            <li>Use <em>triple quotation marks</em> also:</li>
+            <pre><code class="language-python">
+              user1 = "Ahmed"
+              user2 = "Mohammed"
+              user3 = "Hussam"
+              output = f"""{user1} 
+              {user2} 
+              {user3}"""
+              print(output)
+            </code></pre>
+            <li>Same output</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Formatting <em>Width</em> and <em>Alignment</em></dt>
+        <dd>
+          <ul>
+            <li><span>&gt;</span> for right aligned</li>
+            <li><span>&lt;</span> for left aligned</li>
+            <li><span>^</span> for centered
+            </li>
+            <pre><code class="language-python">
+              subtotal = 1598.40
+              sales_tax = 103.90
+              total = 1702.30
+              print(f"""
+                    Subtotal:   ${subtotal:>9,.2f}
+                    Sales Tax:  ${sales_tax:>9,.2f}
+                    Total:      ${total:>9,.2f}
+                    """)
+            </code></pre>
+            <li>The output is:
+              <pre>
+                Subtotal:   $  1,598.40
+                Sales Tax:  $    103.90
+                Total:      $  1,702.30
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Grappling with Weirder Numbers</h3>
+    <div>
+      <dl>
+        <dt><em>Binary, octal, and hexadecimal</em> Numbers</dt>
+        <dd>
+              <ul>
+                <li><table>
+                  <thead>
+                    <th>System</th>
+                    <th>Also Called</th>
+                    <th>Digits Used</th>
+                    <th>Symbol</th>
+                    <th>Function</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Base 2</td>
+                      <td>Binary</td>
+                      <td>0,1</td>
+                      <td>0b</td>
+                      <td>bin()</td>
+                    </tr>
+                    <tr>
+                      <td>Base 8</td>
+                      <td>Octal</td>
+                      <td>0,1,2,3,4,5,6,7</td>
+                      <td>0o</td>
+                      <td>oct()</td>
+                    </tr>
+                    <tr>
+                      <td>Base 16</td>
+                      <td>Hexadecimal</td>
+                      <td>0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F</td>
+                      <td>0x</td>
+                      <td>hex()</td>
+                    </tr>
+                  </tbody></table></li>
+                <li>
+                  <pre><code class="language-python">
+                    x = 255
+                    print(bin(x))
+                    print(0b11111111)
+                  </code></pre></li>
+                  <li>Output is:
+                    <pre>
+                      0b11111111
+                      255
+                    </pre>
+                  </li>
+              </ul>
+        </dd>
+      </dl>
+    </div>
   </body>
 </html>
