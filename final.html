@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai-sublime.min.css">
+    <title>DS231 Final Exam Review</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+    <script>hljs.highlightAll();
+      //hljs.initLineNumbersOnLoad();
+    </script>
+  </head>
+
+  <body>
+    <h1 id="mainTitle">DS231: Final Review Summary</h1>
+
+    <h2>Module 2: Wrapping Your Head Around DS</h2>
+
+    <h3>Introduction</h3>
+
+    <div>
+      <dl>
+        <dt><em>In its truest form:</em></dt>
+        <dd>
+          <ul>
+            <li>
+              <em>Data Science</em> represents the
+              <span>optmization of processes and resources.</span>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Seeing Who Can Make Use of Data Science</h3>
+    <div>
+      <dl>
+        <dt><em>Data Science</em></dt>
+        <dd>
+          <ul>
+            <li>
+              The computational science of extracing
+              <span>meaningful insights</span> from raw data and effectively
+              <span>communicating those insights</span> to generate value
+            </li>
+          </ul>
+        </dd>
+        <dt><em>Data Engineering</em></dt>
+        <dd>
+          <ul>
+            <li>
+              The domain dedicated to
+              <span>building and maintaining systems</span> that
+              <span
+                >overcome data processing bottlenecks and data handling
+                problems</span
+              >
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Three</em> Data Varieties:</dt>
+        <dd>
+          <ul>
+            <li>
+              <em>Structured:</em> Data stored, processed, and manipulated in a
+              <span
+                >traditional relational database management system (RDBMS)</span
+              >. Example: <em>MySQL databse.</em>
+            </li>
+            <li>
+              <em>Unstructured:</em> Data generated from
+              <span>human activities</span> and <em>doesn't</em> fit into
+              <span>structured database format.</span> Example:
+              <span>Email documents.</span>
+            </li>
+            <li>
+              <em>Semistructured:</em> Data that <em>doesn't</em> fit into
+              structured database system,
+              <span>but is nontheless organizable</span> by <em>tags</em> that
+              create a form of <span>order and hierarchy.</span> Example:
+              <em>XML and JSON files.</em>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Who</em> can use Data Science?</dt>
+        <dd>You, your organization, employer, and <span>anyone!</span></dd>
+      </dl>
+    </div>
+    <h3>Inspecting the Pieces of the Data Science Puzzle</h3>
+    <div>
+      <dl>
+        <dt>To practice data science, you need:</dt>
+        <dd>
+          <ul>
+            <li>Analytical know-how of <em>math & statistics</em></li>
+            <li>Coding skills</li>
+            <li>Subject Matter Expertise</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>
+          The <em>Key Components</em> that are part of <em>any</em> data science
+          role:
+        </dt>
+        <dd>
+          <ol>
+            <li>Collecting, querying, and consuming data.</li>
+            <li>
+              Applying <span>mathematical modeling</span> to data science tasks
+            </li>
+            <li><span>Deriving insights</span> from statistical methods</li>
+            <li>Coding, coding, coding!</li>
+            <li>Applying data science to a <span>subject area</span></li>
+            <li>Communicating data insights</li>
+          </ol>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>The <em>Universally</em> accepted <em>file formats</em>:</dt>
+        <dd>
+          <ul>
+            <li>Comma-separated values <span>(CSV)</span></li>
+            <li>Script: <span>.ply, .ipynp, .r</span></li>
+            <li>Application: <span>Excel</span></li>
+            <li>Web programming: <span>D3.js, JavaScript</span></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>
+          The <em>main point</em> of distinction between
+          <span>data science and statistics</span> is
+          <em>the need for subject matter expertise</em>
+        </dt>
+      </dl>
+    </div>
+    <h3>Exploring Career Alternatives That Involve Data Science</h3>
+    <div>
+      <dl>
+        <dt>The data <em>implementer</em>:</dt>
+        <dd>
+          <ul>
+            <li>The main task is to <span>build dataand AI solutions</span></li>
+            <li>High attention to details</li>
+            <li>Starts a project with a request and messy data</li>
+            <li><span>math and coding</span> are his powers.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>The data <em>leader</em>:</dt>
+        <dd>
+          <ul>
+            <li>
+              <em>Lead</em> teams and project stakeholders through building data
+              solutions
+            </li>
+            <li>
+              <em>Love data science</em> for the incredible outcomes it makes
+              possible.
+            </li>
+            <li>Have deep passion to use their DS and leadership skills</li>
+            <li>
+              Love to <em>collaborate</em> with smart people in the organization
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>The data <em>entrepreneur</em>:</dt>
+        <dd>
+          <ul>
+            <li>
+              <em>Builds up business</em> by delivering services and products.
+            </li>
+            <li>Craves the <em>creative freedom</em> as a founder.</li>
+            <li>
+              Creates a <em>vision</em> and use data science expertise to
+              <em> turn it into reality. </em>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h2>Module 3: Tapping Into Critical Aspects of Data Engineering</h2>
+    <h3>Defining Big Data and the Three Vs</h3>
+    <div>
+      <dl>
+        <dt><em>Hadoop</em></dt>
+        <dd>
+          <ul>
+            <li>
+              A <span>data processing platform</span> designed to
+              <span> reduce big data into smaller datasets. </span>
+            </li>
+            <li>
+              It provides <span>batch-processing</span> and
+              <span> storing large volumes of data. </span>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>
+          <em>Three</em> Characteristics of Big Data <span>(The Three Vs)</span>
+        </dt>
+        <dd>
+          <ul>
+            <li>Volume</li>
+            <li>Velocity</li>
+            <li>Variety</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Identifying Important Data Sources</h3>
+    <div>
+      <dl>
+        <dt>Some Sources of <em>Big Data</em>:</dt>
+        <dd>
+          <ul>
+            <li>Enpterprise Data</li>
+            <li>Public Data</li>
+            <li>Sensor Data</li>
+            <li>Social Media</li>
+            <li>Financial Transactions</li>
+            <li>Health Records</li>
+            <li>Click-streams</li>
+            <li>Log files</li>
+            <li>Internet of Things</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Grasping the Differences among Data Approaches</h3>
+    <div>
+      <dl>
+        <dt>Defining <em>Data Science</em>:</dt>
+        <dd>
+          <ul>
+            <li>
+              The Scientific domain dedicated to
+              <span>knowledge discovery</span> via data analysis.
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Defining <em>Machine Learning Engineering</em>:</dt>
+        <dd>
+          <ul>
+            <li>
+              The practice of <span>applying algorithms</span> to learn from
+              data and make <span>automated predictions</span>
+            </li>
+            <li>
+              A machine learning engineer is a <span>software engineer</span>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Defining <em>Data Engineering</em>:</dt>
+        <dd>
+          <ul>
+            <li>
+              Build and maintain <span>data systems</span> for
+              <span>overcoming data processing</span> <em>bottlenecks</em>
+            </li>
+            <li>
+              Experience in working with
+              <em>real-time processing</em> frameworks and <em>
+                massively parallel
+                processing platforms
+              </em></li>
+              <li>Know how to <span>deploy</span> <em>Hadoop, MapReduce, or Spark</em></li>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl><dt>To summarize, <em>hire</em>:</dt>
+      <dd>
+        <ol>
+          <li><span>Data engineer</span> to store, migrate, and process data.</li>
+          <li><span>Data scientist</span> to make sense of it</li>
+          <li><span>Machine learning engineer</span> to bring your machine learning models into production.</li>
+        </ol>
+      </dd>
+      </dl>
+    </div>
+    <h3>Storing and PRocessing Data for Data Science</h3>
+    <div>
+      <dl>
+        <dt><em>Advantages</em> of Storing Data in the <em>Cloud</em>:</dt>
+        <dd>
+          <ul>
+            <li>Faster time-to-market</li>
+            <li>Enhanced flexibility</li>
+            <li>Security</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Serverless</em> Computing:</dt>
+        <dd>
+          <ul>
+            <li>Computing that is executed in a <span>cloud environment</span></li>
+            <li>Decreases downtime</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Kubernetes</em>:</dt>
+        <dd>
+          <ul>
+            <li>An open-source software suite that manages deployment of <span>containerized</span> applications.</li>
+            <li>Can be run on data on-premise clusters, in the cloud, or in a hybrid cloud environment</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Popular <em>Cloud-Warehouse</em> Solutions:</dt>
+        <dd>
+          <ul>
+            <li>Aamazon Redshift</li>
+            <li>Snowflake</li>
+            <li>Google BigQuery</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>NoSQL</em> Database:</dt>
+        <dd>
+          <ul>
+            <li>Nonrelational, distributed database system</li>
+            <li>Can run on-premise, or in the cloud</li>
+            <li>Can work with Semistructured and Structured data</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>On-Premis <em>Hadoop</em> Storage Environment Includes:</dt>
+        <dd>
+          <ul>
+            <li><span>HDFS</span> (data storage, uses <em>commodity hardware</em>)</li>
+            <li><span>MapReduce</span> (bulk data processing)</li>
+            <li><span>Spark</span> (real-time processing)</li>
+            <li><span>YARN</span> (resource management)</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Massively Parallel Processing <em>MPP</em> Platforms:</dt>
+        <dd>
+          <ul>
+            <li>Runs parallel computing tasks on <em>costly custom hardware</em></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h2>Module 4: Machine Learning Means</h2>
+    <h3>Defining Machine Learning and Its Processes</h3>
+    <div>
+      <dl>
+        <dt>Use Cases of <em>Machine Learning</em>:</dt>
+        <dd>
+          <ul>
+            <li>Real-time internet advertising</li>
+            <li>Spam filtering</li>
+            <li>Recommendation engines</li>
+            <li>Natrual language processing</li>
+            <li>Sentiment analysis</li>
+            <li>Auto facial recognition</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Three</em> Main Steps in <em>Machine Learning</em>:</dt>
+        <dd>
+          <ul>
+            <li>Setup</li>
+            <li>Learning</li>
+            <li>Application</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Setup</em>
+        </dt>
+        <dd>
+          <ul>
+            <li>Acquiring data, preprocessing it</li>
+            <li>Selecting variables</li>
+            <li>Breaking data into <span>training and test datasets</span></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Learning</em></dt>
+        <dd>
+          <ul>
+            <li>Model experimentation, training, building, and testing.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Application</em></dt>
+        <dd>
+          <ul>
+            <li>Model deployment and prediction.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Rule of thump for breaking data into test and training data:</dt>
+        <dd>Apply random sampling to <em>two-thirds</em> of the data to train the model. Use the remaining <em>one-third</em> as test data.</dd>
+      </dl>
+    </div>
+    <h3>Machine Learning Terms</h3>
+    <div>
+      <dl>
+        <dt>Instance:</dt>
+        <dd>Row, observation, data point, or instance case.</dd>
+        <dt>Feature:</dt>
+        <dd>Column, field, variable, or independent variable.</dd>
+        <dt>Target Variable:</dt>
+        <dd>Prediction, or dependent variable</dd>
+      </dl>
+    </div>
+    <h3>Considering Learning Styles</h3>
+    <div>
+      <dl><dt>Machine Learning has <em>Three</em> Styles:</dt>
+      <dd>
+        <ul>
+          <li>Supervised</li>
+          <li>Unsupervised</li>
+          <li>Semisupervised <span>(Reinforcement)</span></li>
+        </ul>
+      </dd></dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Supervised Learning</em></dt>
+        <dd>
+          <ul>
+            <li>Require input data to have labeled features.</li>
+            <li>Use supervised learning when you have labeled dataset of historical values to predict future events</li>
+            <li>Example: <span>Logistic Regression.</span></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Unsupervised Learning</em></dt>
+        <dd>
+          <ul>
+            <li>Accepts unlabeled data.</li>
+            <li>Attempts to group observations into categories based on similarities.</li>
+            <li>Examples: <span>K-means clustering, and Singular value decomposition.</span></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Reinforcement Learning</em> (Semisupervised)</dt>
+        <dd>
+          <ul>
+            <li>Is a behavior-based learning model</li>
+            <li>Based on a mechanic like how humans and animals learn</li>
+            <li>The model is given rewards based on how it behaves</li>
+            <li>It learns to maximize the sum of its rewards.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Examples of <em>Deep Learning</em> Algorithms:</dt>
+        <dd>
+          <ul>
+            <li>Gmail's Smart Reply</li>
+            <li>Facebook's DeepFace     
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Apache <em>Spark</em>:</dt>
+        <dd>
+          <ul>
+            <li>In-memory distributed compuring application.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h2>Module 5: Probability, and Statitical Modeling</h2>
+    <h3>Exploring Probability and Inferential Statistics</h3>
+    <div>
+      <dl>
+        <dt>A <em>Statistic</em> is:</dt>
+        <dd>
+          <ul>
+            <li>A result derived from performing mathematical operation on numerical data.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Descriptive</em> Statistics:</dt>
+        <dd>
+          <ul>
+            <li>Provide a <span>description</span> that illuminates some <span>characteristics</span> of a numerical dataset, including: <ul>
+              <li>Dataset distribution</li>
+              <li>Central tendancy <span>(e.g. max, min, or mean)</span></li>
+              <li>Dispersion <span>(as in standard deviation and variance)</span></li>
+            </ul></li>
+            <li>They highlight the <em>relationship</em> between X and Y, but do not assume that X <em>causes</em> Y.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Inferential</em> Statistics:</dt>
+        <dd>
+          <ul>
+            <li>Carve out a smaller section of the dataset and deduce significant information about hte larger dataset.</li>
+            <li>They try to <span>predict</span> by studying <span>causation</span></li>
+            <li>Example: <span>Regression analysis</span></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Descriptive Statistics</em> <span>describe</span> the characteristics of a numerical dataset. But they <em>don't tell you why you should care</em></dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>When to use <em>descriptive</em> statistics:</dt>
+        <dd>
+          <ul>
+            <li>To detect outliers</li>
+            <li>To plan for feature preprocessing requirements</li>
+            <li>To Identify which features to use in an analysis</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Probability Distributions</h3>
+    <div>
+      <dl>
+        <dt>Use <em>random variables</em> and <em>probability distributions</em> to model unpredictable variables.</dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Probability has <em>Two</em> Important Characteristics:</dt>
+        <dd>
+          <ol>
+            <li>The probability of a single event <em>never</em> goes below 0.0 or exceeds 1.1</li>
+            <li>The probability of all events <em>always</em> sums to exactly 1.0</li>
+          </ol>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Probability distribution is <em>classified</em> as per these <em>two</em> types:</dt>
+        <dd>
+          <ol>
+            <li><em>Discrete</em>: A random variable where values can be counted by groupings. <span>Colors of a car</span></li>
+            <li><em>Continuous</em>: A random variable that assigns probabilities to a range of values. <span>Miles per galon</span></li>
+          </ol>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Normal</em> Distributions: <span>(nemeric continuous)</span></dt>
+        <dd>
+          <ul>
+            <li>Represented graphically by a <em>symmetric bell-shaped curve</em></li>
+            <li>Most likely observation at the top of teh bell</li>
+            <li>Observations at the two extremes are less likely</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Binomial</em> Distributions: <span>(numeric discrete)</span></dt>
+        <dd>
+          <ul>
+            <li>Model the number of successes that can occur in a certain number of attempts when only two outcomes are possible.</li>
+            <li>Variables that assume only two values have a binomial distribution.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Categorical</em> Distributions: <span>(non-numeric)</span></dt>
+        <dd>
+          <ul>
+            <li>Represent non-numeric categorical variables or ordinal variables.</li>
+            <li>Example: <span>level of service offered by airlines (first, business, and economy class)</span></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Conditional</em> Probability with <em>Naive Bayes</em></dt>
+        <dd>
+          <ul>
+            <li>It's a machine learning method</li>
+            <li>Borrowed from the statistics field</li>
+            <li>Predicts the likelihood that an event will occur based on evidence in the data features.</li>
+            <li>Based on classification and regression.</li>
+            <li>Useful to classify text data.</li>
+            <li>Example: <span>Span classification</span></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Quantifying Correlation</h3>
+    <div>
+      <dl>
+        <dt><em>Correlation</em> is quantified per the value of a variable called <span>r</span>, which ranges between <em>-1 and 1</em>.</dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>The <em>closer</em> the r-value is to 1 or -1, the <em>more correlation</em> there is between the two variables.</dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>If the two variables have an r-value that's <em>close to 0</em>, it could indicate that they're <em>independent variables</em>.</dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Spearman's Rank Correlation</em></dt>
+        <dd>
+          <ul>
+            <li>Determines correlation between <span>ordinal variables</span></li>
+            <li>It's application converts numeric variable-pairs into ranks by calculating the strength of the relationship between variables.</li>
+          </ul>
+        </dd>
+        <dt>It assumes that:</dt>
+        <dd>
+          <ul>
+            <li>Your variables are ordinal</li>
+            <li>Your variables are related nonlinearly</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Reducing Data Dimensionality with Linear Algebra</h3>
+    <div>
+      <dl>
+        <dt><em>Array and matrix objects</em> are the primary <span>data structure</span> in analytical computing</dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Decomposing</em> data to reduce Dimensionality</dt>
+        <dd>
+          <ul>
+            <li>Using a linear algebra method called <span>Singular Value Decomposition</span> <em>(SVD)</em>, you can reduce the dimensionality of a dataset.</li>
+            <li><em>Dimension reduction algorithms</em> are ideal options if you need to <span>compress your dataset</span> while also <span>removing redundant information and noise</span></li>
+            <li><em>SVD</em> is applied to <span>analyze principal components</span> from large, noisy data sets.</li>
+            <li>This uses a machine learning approach called <em>Principal Component Analysis (PCA)</em></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Reducing</em> Dimensionality with <em>Factor Analysis</em></dt>
+        <dd>
+          <ul>
+            <li><span>Factor Analysis</span> is used for filtering out redundant information and noise from your data.</li>
+            <li>Shared variance means information redudancy is at play.</li>
+            <li>We use <em>factor analysis</em> or <em>principal component analysis</em> to clear data of information redudancy.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Factor Analysis</em> Makes the Following Assumptions:</dt>
+        <dd>
+          <ul>
+            <li>Your features are <span>metric</span>.</li>
+            <li>Your features should be <span>continuous or ordinal</span>.</li>
+            <li>You have more than <span>100 observations</span> in your dataset and at least <span>5 observations per feature</span>.</li>
+            <li>Your sample is <span>homogenous</span>.</li>
+            <li>There is <span>r &gt; 0.3 correlation</span> between the features in your dataset.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Decreasing Dimensionality and <em>Removing Outliers</em> with <em>PCA</em>:</dt>
+        <dd>
+          <ul>
+            <li><span>Principal Component Analysis</span> <em>(PCA)</em> is another dimensionality reduction technique like <span>SVD</span>.</li>
+            <li>An <em>unsupervised</em> statistical method.</li>
+            <li>Finds relationships between features in a dataset.</li>
+            <li>Reduces those features to a set of non-information redundant principal components.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Differences</em> between <span>PCA</span> and <span>Factor Analysis</span>:</dt>
+        <dd>
+          <ul>
+            <li><span>PCA</span> does not regress to find cause of shared variance.</li>
+            <li>In <span>PCA</span>, the number of components to be discovered in the dataset is not specified on the first run.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Modeling Decisions with Multiple Criteria Decision-Making</h3>
+    <div>
+      <dl>
+        <dt>To use <em>MCDM</em>, the following <em>two assumptions</em> must be satisfied:</dt>
+        <dd>
+          <ul>
+            <li><span>Multiple criteria evaluation</span>: You must have more than one criterion to optimize.</li>
+            <li><span>Zero-sum system</span>: Optimizing one criterion must come at sacrifice of at least another criterion.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Fuzzy</em> MCDM:</dt>
+        <dd>
+          <ul>
+            <li>Evaluates suitability within a range, not using binary terms of 0 or 1.</li>
+            <li>The term <span>fuzzy</span> means the criteria offers a range of acceptability, unlike binary criteria in traditional MCDM.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Introducing Regression Methods</h3>
+    <div>
+      <dl>
+        <dt>Use regression methods if you want to determine the <em>strength of correlation</em> between variables in your data.</dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Regression methods assume a <em>cause-and-effect</em> relationship between variables.</dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Linear</em> Regression:</dt>
+        <dd>
+          <ul>
+            <li>Used to describe and quantify the relationship between a target variable <span>Y</span>, and chosen features of the dataset.</li>
+            <li>If only one feature is used, linear regression becomes as simple as middle school algebra formula: <span>y = mx + b</span></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Linear</em> Regression <em>Limitations</em>:</dt>
+        <dd>
+          <ul>
+            <li>Works only with numerical variables.</li>
+            <li>Missing values cause problems.</li>
+            <li>Outliers cause inaccurate results.</li>
+            <li>Assumes a linear relationship exists between features and target variable.</li>
+            <li>Assumes all features are independent.</li>
+            <li>Prediction errors should be normally distributed.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Logistic</em> Regression:</dt>
+        <dd>
+          <ul>
+            <li>It's a machine learning method.</li>
+            <li>Used to estimate values for a <em>categorical</em> target varaible.</li>
+            <li>Target variable should be <em>numeric</em> and should contain values that describe the target's <em>class</em>.</li>
+            <li>It predicts the class of observation, and indicates the probability of each estimate.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Ordinary Least Squares <em>(OLS)</em> Regression Method:</dt>
+        <dd>
+          <ul>
+            <li>A statistical method that fits a linear regression line to a dataset.</li>
+            <li>Used to construct a close approximation function to your data.</li>
+            <li>Fits a regression line to models with more than one independent variable.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Detecting Outliers</h3>
+    <div>
+      <dl>
+        <dt><em>Outliers</em>:</dt>
+        <dd>
+          <ul>
+            <li>Data points with values significantly different from the majority of the remaining data points.</li>
+            <li>Used to spot <span>anomalies</span>, that represent <em>fraud, equipment failure, or cybersecurity attacks</em>.</li>
+            <li>Can be detected using a <span>univariate</span> or a <span>mutlivariate</span> approach.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Univariate</em> Analysis:</dt>
+        <dd>
+          <ul>
+            <li>Inspecting features <em>individually</em> for anomalous values.</li>
+            <li>Choose from two simple methods:
+              <ul>
+                <li><span>Tukey outlier labeling</span></li>
+                <li><span>Tukey boxplotting</span></li>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Multivariate</em> Analysis:</dt>
+        <dd>
+          <ul>
+            <li>Inspecting <em>combinations</em> of data points from disparate variables.</li>
+            <li>Considers two or more variables at a time and inspect them together.</li>
+            <li>Use one of the following methods:
+              <ul>
+                <li><span>A scatter-plot matrix</span></li>
+                <li><span>Boxplotting</span></li>
+                <li><span>Density-based spatial clustering</span> <em>(DBScan)</em></li>
+                <li><em>Principal Component Analysis</em></li>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Introducing Time Series Analysis</h3>
+    <div>
+      <dl>
+        <dd>
+          <ul>
+            <li>A collection of data on attribute values over time.</li>
+            <li>Predicts future instances of the measure based on past observational data.</li>
+            <li>Used to forecast future values from data in your dataset.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h2>Module 6: Part 1 | Ten Phenomenal Resources </h2>
+    <h3>Introduction</h3>
+    <div>
+      <dl>
+        <dt><em>Open</em> Data:</dt>
+        <dd>
+          <ul>
+            <li>Data that has been made publicly available and is permitted to be used, reused, built on, and shared with others.</li>
+            <li>Part of the <span>Open Movement</span></li>
+            <li>Have <span>copyleft</span> instead of <em>copyright</em></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Exploring Data Worldwide</h3>
+    <div>
+      <dl>
+        <dt>1. <em>Data.gov</em></dt>
+        <dd>
+          <ul>
+            <li>URL: <span>www.data.gov</span></li>
+            <li>100,000 datasets</li>
+            <li>Indicators:
+              <ul><span>
+                <li>Economics</li>
+                <li>Environmental</li>
+                <li>STEM industry</li>
+                <li>Quality of life</li>
+                <li>Legal</li>
+              </span>
+              </ul>
+            </li>
+            <li>60 open-source APIs</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>2. <em>Canada Open Data</em></dt>
+        <dd>
+          <ul>
+            <li>URL: <span>open.canada.ca</span></li>
+            <li>200,000 datasets</li>
+            <li>Indicators
+              <ul>
+                <span>
+                  <li>Environmental</li>
+                  <li>Citizenship</li>
+                  <li>Quality of Life</li>
+                </span>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>3. <em>Data.gov.uk</em></dt>
+        <dd>
+          <ul>
+            <li>URL: <span>data.gov.uk</span></li>
+            <li>20,000 datasets</li>
+            <li>Indicators:
+              <ul>
+                <span>
+                  <li>Environmental</li>
+                  <li>Government Spending</li>
+                  <li>Societal</li>
+                  <li>Health</li>
+                  <li>Education</li>
+                  <li>Business & Economics</li>
+                </span>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>4. <em>US Census Bereau Data</em></dt>
+        <dd>
+          <ul>
+            <li>URL: <span>www.census.gov</span></li>
+            <li>Useful for <em>marketing or advertising research</em></li>
+            <li>Provides the following <em>demo-graphics</em> data:
+            <ul>
+              <span>
+                <li>Age</li>
+                <li>Average annuala income</li>
+                <li>Household size</li>
+                <li>Gender of race</li>
+                <li>Level of education</li>
+              </span>
+            </ul></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>5. <em>NASA Data</em></dt>
+        <dd>
+          <ul>
+            <li>URL: <span>data.nasa.gov</span></li>
+            <li>Generates <em>4 terabytes</em> of new <span>earth-science</span> data <em>per day</em></li>
+            <li>Indicators:
+              <ul>
+                <span>
+                  <li>Astronomy and space</li>
+                  <li>Climate</li>
+                  <li>Life sciences</li>
+                  <li>Geology</li>
+                  <li>Engineering</li>
+                </span>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>6. <em>World Bank Data</em></dt>
+        <dd>
+          <ul>
+            <li>URL: <span>data.worldbank.org</span></li>
+            <li>The World Bank is an <span>international financial institution</span> that provides loans to developing countries.</li>
+            <li>Indicators:
+              <ul>
+                <span>
+                  <li>Agriculture & rural development</li>
+                  <li>Economy & growth</li>
+                  <li>Environment</li>
+                  <li>Science and Technology</li>
+                  <li>Financial sector</li>
+                  <li>Poverty income</li>
+                </span>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>7. <em>Knoema Data</em></dt>
+        <dd>
+          <ul>
+            <li>URL: <span>knoema.com</span></li>
+            <li>500+ datasets</li>
+            <li>150 million time series</li>
+            <li>Indicators:
+              <ul>
+                <span>
+                  <li>Government data from industrial nations</li>
+                  <li>National public data from developing nations</li>
+                  <li>United nations data</li>
+                  <li>International organization data</li>
+                  <li>Corporate data from global corporations</li>
+                </span>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>8. <em>Quandl Data</em></dt>
+        <dd>
+          <ul>
+            <li>URL: <span>www.quandl.com</span></li>
+            <li><em>Toronto-based</em> website</li>
+            <li>search engine for numeric data</li>
+            <li>10 million datasets</li>
+            <li>Links 2.1 millon UN datasets and other sources</li>
+            <li>Indicators:
+              <ul>
+                <span>
+                  <li>Open financial data project</li>
+                  <li>Central banks</li>
+                  <li>Real estate organizations</li>
+                  <li>Well-known think tanks.</li>
+                </span>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>9. <em>Exversion Data</em></dt>
+        <dd>
+          <ul>
+            <li>Provides collaborative functionality like <span>GitHub</span></li>
+            <li>All uploaded data is public</li>
+            <li>Extremely useful in data-cleanup stage</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>10. <em>OpenStreetMap</em> Spatial Data <em>OSM</em></dt>
+        <dd>
+          <ul>
+            <li>URL: <span>openstreetmap.org</span></li>
+            <li>Crowd-sourced alternative to commercial mapping products</li>
+            
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Discovering Saudi Open Data Portal</h3>
+    <div>
+      <dl>
+        <dt><span>Saudi</span> Open Data Portal:</dt>
+        <dd>
+          <ul>
+            <li>URL: <span>https://data.gov.sa</span></li>
+            <li><span>6,544</span> datasets</li>
+            <li>Total publishers: <span>147</span></li>
+            <li>Aims to implement a public data hub and a strategy to enable transperancy and inspire innovation</li>
+            <li>Its <em>primary role</em> is to publish datasets from ministries and government agencies in <span>open format</span> and make it available to the public.</li>
+            <li>Helps bridge the gap between govenrments and citizens</li>
+            <li>Public benefits:
+              <ul>
+                <span>
+                  <li>Better understanding of how government agencies work.</li>
+                  <li>Evaluating performance of administrative institutions.</li>
+                  <li>Making informed decisions about government policies.</li>
+                </span>
+              </ul>
+            </li>
+            <li>Allows using data for research</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h2>Module 6: Part 2 | Starting with Python </h2>
+    <h3> Why is Python Hot</h3>
+    <div>
+      <dl>
+        <dt>
+          Python has lots of capabilities in machine Learning, robotics, AI, and data science
+          
+        </dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Reasons for Python's <em>Popularity</em></dt>
+        <dd>
+          <ul>
+            <li>Easy to learn</li>
+            <li>Free</li>
+            <li>Offers ready-made tools to data science, machine learning, AI, and robotics.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Choosing the Right Python</h3>
+    <div>
+      <dl>
+        <dt>Go to <em>python.org</em> to download Python.</dt>
+      </dl>
+    </div>
+    <h3>Tools for Success</h3>
+    <div>
+      <dl>
+        <dd>
+          <ul>
+            <li>You need an <span>editor</span> to type the code</li>
+            <li>You need an <span>interpreter</span> to run the code</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Code Editor</em></dt>
+        <dd>
+          <ul>
+            <li>An app to type code.</li>
+            <li>You still need the Python interpreter</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><span>Anaconda</span></dt>
+        <dd>
+          <ul>
+            <li>A complete Python development environment</li>
+            <li>Has intuitive and easy graphic user interface</li>
+            <li>Works on Mac, Windows, or any phone or tablet</li>
+            <li>Often referred to as a <span>data science platform</span></li>
+          
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Installing</em> <span>Anaconda</span></dt>
+        <dd>
+          <ul>
+            <li>Go to <span>www.anaconda.com/download</span></li>
+            <li>Click download under the latest version</li>
+            <li>Follow instructions to download free version</li>
+            <li>Installation: select options that make sense to you</li>
+            <li>Install <span>VS Code</span> if asked</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Using <span>Anaconda</span> Navigator</dt>
+        <dd>
+          <ul>
+            <li>Lets you navigate different features and choose what to run</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Writing Python in VS Code</h3>
+    <div>
+      <dl>
+        <dt>To use VS Code with Python and <span>Anaconda</span>, you need extensions.</dt>
+        <dd>
+          <ul>
+            <li>To verify, click the <em>Extensions</em> icon in the left pane.
+            </li>
+            <li>You should see <em>three</em> extensions:
+            <ul>
+              <span>
+                <li>Anaconda extension pack</li>
+                <li>Python
+                </li>
+                <li>YAML</li>
+              </span>
+            </ul></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Using Jupyter Notebook for Coding</h3>
+    <div>
+      <dl>
+        <dt><em>Jupyter Notebook</em></dt>
+        <dd>
+          <ul>
+            <li>A popular tool for writing Pyhon code</li>
+            <li>Supports <em>three</em> popular languages:
+            <ul>
+              <span>
+                <li>Julia</li>
+                <li>Python</li>
+                <li>R</li>
+              </span>
+            </ul></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h2>Module 7: Interactive Mode, Getting Help, and Writing Apps</h2>
+    <h3>Using Python's Interactive Mode</h3>
+    <div>
+      <dl>
+        <dt>Opening <em>Terminal</em>: To use Python interactively with <span>Anaconda</span>, follow these steps:</dt>
+        <dd>
+          <ul>
+            <li>Open <span>Anaconda</span> Navigator, then VS Code from <span>Anaconda</span> home page.</li>
+            <li>Choose <span>View =&gt; Terminal</span> from VS Code menu bar</li>
+            <li>Highlight Terminal pane</li>
+            <li>You will see the following prompt:
+              <ul>
+                <span>
+                  <li>PS C:\Users\xxx&gt;</li>
+                </span>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Getting your Python <em>version</em></dt>
+        <dd>
+          <ul>
+            <li>At the operating system command prompt, type the following:
+              <ul>
+                <span>
+                  <li>python --version</li>
+                </span>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Going into Python <em>Interpreter</em></dt>
+        <dd>
+          <ul>
+            <li>Enter the following command:
+              <ul>
+                <span>
+                  <li>python</li>
+                </span>
+              </ul>
+            </li>
+            <li>You should see information about Python version and the <span>&gt;&gt;&gt;</span> prompt.</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Using Python's <em>built-in help</em></dt>
+        <dd>
+          <ul>
+            <li>Use the following command:
+              <ul>
+                <span>
+                  <li>help()</li>
+                </span>
+              </ul>
+            </li>
+            <li>You will see <span>help&gt;</span></li>
+            <li>You are no longer in Python interpreter</li>
+            <li>You can enter the name of any module, keyword, or topic to get help</li>
+            <li>To get a list of Python <em>keywords</em>, type the following:
+            <ul>
+              <span>
+                <li>keywords</li>
+              </span>
+            </ul></li>
+            <li>To <em>exit</em> interactive help:
+            <ul>
+              <span>
+                <li>Type the letter "q"</li>
+                <li>Or, press Ctrl+Z</li>
+                <li>You will get back to the &gt;&gt;&gt; prompt</li>
+              </span>
+            </ul></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Searching for <em>Specific</em> Help Topics <em>Online</em></dt>
+        <dd>
+          <ul>
+            <li>www.youtube.com</li>
+            <li>stackoverflow.com</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Creating a Python Development Workspace</h3>
+    <div>
+      <dl>
+        <dt>VS Code uses the term <em>workspace</em> to define <span>development environment</span></dt>
+        <dd>
+          <ul>
+            <li>It includes Python interpreter + additional extensions</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Steps to Create a <em>Development Workspace</em> in VS Code:</dt>
+        <dd>
+          <ol>
+            <li>Open VS Code from <span>Anaconda</span></li>
+            <li>Choose <em>File =&gt; Save Workspace As</em>, and select folder</li>
+            <li>Type name of workspace and click <em>Save</em></li>
+            <li>Choose <em>File =&gt; Preferences =&gt; Settings</em></li>
+            <li>Click <em>Open Settings (JSON)</em> icon</li>
+            <li>Copy the entire line that starts with <span>python.pythonpath</span></li>
+            <li>Click the <em>Split Editor Right</em> icon</li>
+            <li>Choose <em>View =&gt; Command Palette</em>, type <span>open</span> and then select <em>Preferences: Open Workspace Settings(JSON)</em></li>
+            <li>Click between the set of curly braces and paste the lines of code there</li>
+            <li>Choose <em>File=&gt;Save</em></li>
+            <li>Close all settings and close <span>Anaconda</span></li>
+          </ol>
+        </dd>
+      </dl>
+    </div>
+    <h3>Creating a Folder for Your Python Code</h3>
+    <div>
+      <dl>
+        <dt>Steps to <em>Associate Code Folder</em> with VS Code Workspace:</dt>
+        <dd>
+          <ol>
+            <li>Open <span>Anaconda</span> and launch VS Code</li>
+            <li>Choose <em>File =&gt; Open Workspace</em></li>
+            <li>Navigate to the folder where you saved your workspace</li>
+            <li>Choose <em>File =&gt; Add Folder to Workspace</em></li>
+            <li>Navigate the folder for your Python code, and choose <em>Add</em></li>
+          </ol>
+        </dd>
+      </dl>
+    </div>
+    <h3>Typing, Editing, and Debugging Python Code</h3>
+    <div>
+      <dl>
+        <dt><em>Writing</em> Python Code</dt>
+        <dd>
+          <ul>
+            <li>You'll write most of the code in an editor</li>
+            <li>Each Python code file is a <em>plain text</em> file with a <span>.py</span> extension</li>
+            <li>To create a <span>.py</span> file:
+            <ol>
+              <span>
+                <li>Open VS Code</li>
+                <li>Click the Explorer icon</li>
+                <li>Right-click a folder and choose <em>New File</em></li>
+                <li>Type the filename with <em>.py</em> extension and press Enter</li>
+              </span>
+            </ol></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Your <em>First</em> Python Code</dt>
+        <dd>
+          <ol>
+            <li>Click to the right of line 1 in the editing area</li>
+            <li>Type the following:
+              <ul>
+                <span>
+                  <li>print("Hello World")</li>
+                </span>
+              </ul>
+            </li>
+            <li>Press Enter</li>
+          </ol>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Saving</em> Your Code</dt>
+        <dd>
+          <ul>
+            <li>One way to save your code is to try to remember to save any time you make a change</li>
+            <li>The second method is to use <em>AutoSave</em></li>
+            <li>To turn on autosave, choose <em>File =&gt; Auto Save</em>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Running</em> Python in VS Code</dt>
+        <dd>
+          <ul>
+            <li>Easiest way: right-click the file's name and choose <em>Run Python File in Terminal</em></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Learning Simple <em>Debugging</em>: Screen Indications of an <em>Error</em></dt>
+        <dd>
+          <ul>
+          <li><em>Name of folder and file</em> will be red in the Explorer pane</li>
+          <li>Number of errors in file will appear in red <em>next to the filename</em> in the Explorer pane</li>
+          <li>Total <em>number of errors</em> will appear next to the <em>circled X</em> in the <em>bottom left corner</em> of VS Code window</li>
+          <li>Bad code will have a <em>wavy red underline</em></li>
+        </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Python is <em>case-sensitive</em></dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>VS Code has a <em>built-in debugger</em></dt>
+      </dl>
+    </div>
+    <h3>Writing Code in a Jupyter Notebook</h3>
+    <div>
+      <dl>
+        <dt>Creating and Saving a <em>Jupyter Notebook</em></dt>
+        <dd>
+          <ol>
+            <li>Open <span>Anaconda</span> and launch <em>Jupyter Notebook</em></li>
+            <li>Navigate oto the Jupyter notebook folder</li>
+            <li>Click <em>New</em> and choose <em>Python 3</em></li>
+            <li>Click <em>Untitled</em> at the top to rename the notebook</li>
+          </ol>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Typing and Running</em> cod in a notebook</dt>
+        <dd>
+          <ol>
+            <li>Click in the Code cell to the right of <em>In []: </em>and type your code</li>
+            <li>To run the code, hold down <em>Alt</em> and press <em>Enter</em>, or click the <em>Run</em> button in the toolbar</li>
+            <li>The output appears <span>below</span> the cell</li>
+          </ol>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Adding <em>Markdown text</em></dt>
+        <dd>
+          <ul>
+            <li>You can add text, pictures, and videos to your notebook</li>
+            <li>No special coding needed to regular text</li>
+            <li><span>Markdown tags</span> needed for formatting, or adding pictures and videos.</li>
+            <li><em>Markdown</em>: is a popular markup language like HTML</li>
+            <li>Add an empty cell by choosing <em>Insert =&gt; Insert Cell Below</em></li>
+            <li>Then add content to the new cell <span>(regular text & Markup)</span></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>To run <em>all cells</em> in a notebook, use the <span>double triangle</span> icon in the toolbar.</dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Jupyter notebook</em> files have the <span>.ipynb</span> extension.</dt>
+      </dl>
+    </div>
+    <h2>Module 8: Python Elements and Syntax</h2>
+    <h3>The Zen of Python</h3>
+    <div>
+      <dl>
+        <dt>Pyhton is based on the <em>philosophy</em> that a programming language should be <span>geared toward how humans think, work, and communicate</span></dt>
+      </dl>
+    </div>
+    <h3>Introducing Object Oriented Programming</h3>
+    <div>
+      <dl>
+        <dt><em>Object-oriented programming:</em></dt>
+          <dd>
+            <ul>
+              <li>A design philosophy that tries to mimic the real world by having objects with properties as well as methods.</li>
+            </ul>
+          </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Object</em></dt>
+        <dd>
+          <ul>
+            <li>A software thing, not physical</li>
+          </ul>
+        </dd>
+        <dt><em>Class</em></dt>
+        <dd>
+          <ul>
+            <li>Object creator</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Python is an <em>object-oriented language</em></dt>
+        <dd>
+          <ul>
+            <li>Consists of controls to control different objects</li>
+            <li>Must learn core lanaguge first before using other people's objects</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Discovering Why Indetations Count, Big Time</h3>
+    <div>
+      <dl>
+        <dt>Paython uses <em>indentations</em> rather than <span>paranthesis and curly braces</span> to indicate blocks of code</dt>
+        <dd>
+          <ul>
+            <li>Indentations are <em>not</em> optional</li>
+            <li>They affect how the code runs</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Using Python Modules</h3>
+    <div>
+      <dl>
+        <dt>One of the <em>secrets</em> to Python's <span>success</span> is that it's <span>comprised of a simple, and clean core language</span></dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Python <em>Modules</em></dt>
+        <dd>
+          <ul>
+            <li>Many modules are available for free</li>
+            <li>You can access the power of modules from the basic core language</li>
+            <li>Most modules are for a specific application, like <span>science, AI, date and time</span></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Understanding the <em>Syntax</em> for Importing <em>Modules</em></dt>
+        <dd>
+          <ul>
+            <li>To import a module in your Python program, use the following syntax:
+              <ul>
+                <span>
+                  <li>import <em>modulename</em> [as <em>alias</em>]</li>
+                  <li>Example:</li>
+                </span>
+              </ul>
+              <pre><code class="language-python">
+                import random as rnd
+                </code></pre>
+              </li>
+              <li>Anything in <em>italic</em> is called <span>syntax chart</span>, information you should supply in your own code. </li>
+              <li>The part between brackets <span>[]</span> is optional</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+
+    <div>
+      <dl>
+        <dt>Using an <em>Alias</em> with Modules</dt>
+        <dd>
+          <ul>
+            <li>You can assign an alias to any module you import as a <em>nickname</em></li>
+            <li>Then you can can use the <em>nickname</em> to refer to the module in your code:
+              <pre><code class="language-python">
+                answer = rnd.randint(1,8)
+              </code></pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h2>Module 9: Building Your First Python Application</h2>
+    <h3>Opening the Python App File</h3>
+    <div>
+      <dl>
+        <dt>To Open a Python File, Follow These Steps:</dt>
+        <dd>
+          <ul>
+            <li>Open <span>Anaconda</span> and launch VS Code</li>
+            <li>Choose <em>File =&gt; Open Workspace</em> and open your <em>Python 3</em> workspace</li>
+            <li>Click the <em>hello.py</em> file you created before</li>
+            <li>Select all the text and delete it to start from scratch</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Typing and Using Python Comments</h3>
+    <div>
+      <dl>
+        <dt><em>Comment:</em> A text in the program that does nothing</dt>
+        <dd>
+          <ul>
+            <li>Explains code to team members</li>
+            <li>Developers use comments as notes to themselves</li>
+
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>To be identified as a comment, do <em>one</em> of the following:</dt>
+        <dd>
+          <ul>
+            <li>Start the text with a pound sign <span>(#)</span></li>
+            <li>Enclose the text in <span>triple quotation marks</span></li>
+            <li>Examples:
+              <pre><code class="language-python">
+                #This is a single line comment
+                """ This is 
+                    a multiline
+                    comment"""
+              </code></pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Understanding Python Data Types</h3>
+    <div>
+      <dl>
+        <dt><ul>
+          <li><em>Numbers</em> are amounts, such as 10 or 123.45</li>
+          <li><em>Text</em> consists of letter and words</li>
+          <li>Computer can do arithmetic operations with numbers, not with letters and words</li>
+        </ul></dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Numbers</em></dt>
+        <dd>
+          <ul>
+            <li>Must start with a number digit(0-9), a dot(.), or a hyphen(-)</li>
+            <li>A number can only have one decimal point</li>
+            <li>Does not contain letters, spaces, dollar sign, etc.,</li>
+            <li>Cannot contain a hyphen (-) in the middle</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><span>Types</span> of <em>Numbers</em></dt>
+        <dd>
+          <ul>
+            <li><span>Integers</span>: whole numbers, positive and negatives. No size limit</li>
+            <li><span>Floats</span>: Floating-point numbers. Any number with a decimal point. No size limit</li>
+            <li><span>Complex Numbers</span> End with the letter j for imaginary part of the number</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Words</em> (Strings}</dt>
+        <dd>
+          <ul>
+            <li>Names, addresses, and all kinds of text</li>
+            <li>Computers can do arithmetic operations on them</li>
+            <li>Must be enclosed in single or double quotation marks</li>
+            <li>If the string contain a single quote, use double quotes and the opposite is true
+              <pre><code class="language-python">
+                firstString = "Ahmed's book is here"
+                secondString = 'I "gave" the book to Ahmed'
+              </code></pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Booleans</em></dt>
+        <dd>
+          <ul>
+            <li>Can either be <span>True</span> or <em>Flase</em></li>
+            <li>In Python, True and False values are stored in <em>variables</em>
+            <pre><code class="language-python">
+              x = True
+              y = False
+            </code></pre></li>
+            <li>Not enclosed in quotation mark, and the first letter is capital</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Working with Python Operators</h3>
+    <div>
+      <dl>
+        <dt><em>Arithmetic</em> Operators</dt>
+        <dd>
+          <ul>
+            <li>For doing arithmetic addition, subtraction, multiplication, division, and more</li>
+          </ul>
+          <table>
+            <thead><th>Operator</th>
+            <th>Description</th>
+          <th>Example</th></thead>
+          <tbody>
+            <tr>
+              <td>+</td>
+              <td>Addition</td>
+              <td>1 + 1 = 2</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Subtraction</td>
+              <td>10 - 1 = 9</td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>Multiplication</td>
+              <td>3 * 5 = 15</td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>Division</td>
+              <td>10 / 5 = 2</td>
+            </tr>
+            <tr>
+              <td>%</td>
+              <td>Modulus (remainder)</td>
+              <td>11 % 5 = 1</td>
+            </tr>
+            <tr>
+              <td>**</td>
+              <td>Exponent</td>
+              <td>3 ** 2 = 9</td>
+            </tr>
+            <tr>
+              <td>//</td>
+              <td>Floor division</td>
+              <td>11 // 5 = 2</td>
+            </tr>
+          </tbody>
+          </table>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Comparison</em> Operators</dt>
+        <dd>
+          <ul>
+            <li>Help write code that <span>makes decisions</span></li>
+            <table>
+              <thead>
+                <th>Operator</th>
+                <th>Meaning</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&lt;</td>
+                  <td>Less than</td>
+                </tr>
+                <tr>
+                  <td>&lt;=</td>
+                  <td>Less than or equal to</td>
+                </tr>
+                <tr>
+                  <td>&gt;</td>
+                  <td>Greater than</td>
+                </tr>
+                <tr>
+                  <td>&gt;=</td>
+                  <td>Greater than or equal to</td>
+                </tr>
+                <tr>
+                  <td>==</td>
+                  <td>Equal to</td>
+                </tr>
+                <tr>
+                  <td>!=</td>
+                  <td>Not equal to</td>
+                </tr>
+                <tr>
+                  <td>is</td>
+                  <td>Object identity</td>
+                </tr>
+                <tr>
+                  <td>is not</td>
+                  <td>Negated object identity</td>
+                </tr>
+              </tbody>
+            </table>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Boolean</em> Operators</dt>
+        <dd>
+          <ul>
+            <li>Work with Boolean values.</li>
+            <li>Used to detemine if one or more things are True or False</li>
+            <table>
+              <thead>
+                <th>Operator</th>
+                <th>Code Example</th>
+                <th>What It Determines</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>or</td>
+                  <td>x or y</td>
+                  <td>Either x or y is True</td>
+                </tr>
+                <tr>
+                  <td>and</td>
+                  <td>x and y</td>
+                  <td>Both x and y are True</td>
+                </tr>
+                <tr>
+                  <td>not</td>
+                  <td>not x</td>
+                  <td>x is not True</td>
+                </tr>
+              </tbody>
+            </table>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Creating and Using Variables</h3>
+    <div>
+      <dl>
+        <dt>Creating <em>valid</em> variable names</dt>
+        <dd>
+          <ul>
+            <li>A <em>variable</em> is a placeholder for information that may change</li>
+          </ul>
+        </dd>
+        <dt><em>Rules</em> for Writing Variables</dt>
+        <dd>
+          <ul>
+            <li>Must start with a <em>letter</em> or an <em>underscore</em></li>
+            <li>After the first character, you can use letters, numbers, or underscores</li>
+            <li>Variables are <em>case sensitive</em></li>
+            <li>Can't contain double or single quotes</li>
+            <li><span>PEP8</span> style recommends to use lowercase letters and underscores to separete multiple words</li>
+          </ul>
+        </dd>
+        <dt>To <em>create</em> a variable, use the following</dt>
+        <dd>
+          <ul>
+            <span>
+              <li><em>variablename</em> = <em>value</em></li>
+            </span>
+          </ul>
+        </dd>
+        <dt>The <em>Assignment</em> Operator <span>(=)</span></dt>
+        <dd>
+          <ul>
+            <li>Assigns value to a variable</li>
+            <pre><code class="language-python">
+              x = 10 # Assigning the value 10 to variable x
+            </code></pre>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Understanding What Syntax is and Why It Matters</h3>
+    <div>
+      <dl>
+        <dt><em>Syntax</em> is important in human languages and in programming languages</dt>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Syntax <em>Error</em></dt>
+        <dd>
+          <ul>
+            <li>Tells you that Python doesn't know what to do with the line of code</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Individual</em> Lines of Code
+        </dt>
+        <dd>
+          <ul>
+            <li>A line of code ends with <span>line break</span> or a <span>semicolon</span></li>
+            <pre><code class="language-python">
+              #Using line breaks
+              first_name = "Ahmed"
+              last_name = "Harbi"
+
+              #Using semicolon
+              first_name = "Ahmed"; last_name = "Harbi"
+            </code></pre>
+            <li>The code will <em>rund the same</em> in both cases</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h2>Module 10: Working with Numbers, Text, and Dates</h2>
+  </body>
+</html>
