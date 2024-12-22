@@ -2368,5 +2368,554 @@
         </dd>
       </dl>
     </div>
+    <h2>Module 11: Working With Numbers, Text, and Dates (Part II)</h2>
+    <h3>Manipulating Strings</h3>
+    <div>
+      <dl>
+        <dt><em>Concatenating</em> Strings</dt>
+        <dd>
+          <ul>
+            <li>You can join strings by a <em>+</em> sign.</li>
+            <li>This process is called <span>string concatenation</span></li>
+            <li>Python <em>doesn't</em> put spaces, put them yourself</li>
+            <li>Space is represented by quotation marks with one space between them <em>" "</em></li>
+            <li>
+              <pre><code class="language-python">
+                print("My" + " " + "name" + " " + "is" + " " + "Mohammed")
+              </code></pre>
+            </li>
+            <li>Output is:
+              <pre>
+                My Name is Mohammed
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Getting the <em>length</em> of a string</dt>
+        <dd>
+          <ul>
+            <li>Use the built-in <em>len()</em> function</li>
+            <li>
+              <pre><code class="language-python">
+                s1 = ""
+                s2 = " "
+                s3 = "A B C"
+                print(len(s1))
+                print(len(s2))
+                print(len(s3))
+              </code></pre>
+            </li>
+            <li>Output is:
+              <pre>
+                0
+                1
+                5
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div><dl>
+      <dt><em>Common</em> String <em>Operators</em></dt>
+      <dd>
+        <ul>
+          <table>
+            <thead>
+              <th>Operator</th>
+              <th>Purpose</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>x in s</td>
+                <td>True is x exists in string s</td>
+              </tr>
+              <tr>
+                <td>x not in s</td>
+                <td>True is x is not in string s</td>
+              </tr>
+              <tr>
+                <td>s * n (or n * s)</td>
+                <td>Repeats s n times</td>
+              </tr>
+              <tr>
+                <td>s[i]</td>
+                <td>Returns the ith item of string s</td>
+              </tr>
+              <tr>
+                <td>s[i:j]</td>
+                <td>A slice from string s from position i until j</td>
+              </tr>
+              <tr>
+                <td>s[i:j:k]</td>
+                <td>A slice of s from i to j with step k</td>
+              </tr>
+              <tr>
+                <td>min(s)</td>
+                <td>Returns the smallest character in s</td>
+              </tr>
+              <tr>
+                <td>max(s)</td>
+                <td>Returns that largest character in s</td>
+              </tr>
+              <tr>
+                <td>s.index(x,[i,j]) </td>
+                <td>The numeric position of the first occurrence of x in string s. i and j are optional limits to the search from i to j</td>
+              </tr>
+              <tr>
+                <td>s.count(x)</td>
+                <td>The number of times x appears in s</td>
+              </tr>
+            </tbody>
+          </table>
+        </ul>
+      </dd>
+    </dl></div>
+    <div>
+      <dl>
+        <dt>Built-in <em>Methods</em> for Python 3 Strings</dt>
+        <dd>
+          <table>
+            <thead><th>Method</th>
+            <th>Purpose</th></thead>
+            <tbody>
+              <tr>
+                <td>s.capitalize()</td>
+                <td>capitalize the first letter and the rest lowercase</td>
+              </tr>
+              <tr>
+                <td>s.count(x, [y, z])</td>
+                <td>The number of times x appears in s from position y to z</td>
+              </tr>
+              <tr>
+                <td>s.find(x, y, z)</td>
+                <td>Returns a number indicating the first position where x can be found in s from position y to z</td>
+              </tr>
+              <tr>
+                <td>s.isalpha()</td>
+                <td>True if s at least has one character and contains only letters</td>
+              </tr>
+              <tr>
+                <td>s.isdecimal()</td>
+                <td>True if s is at least one character long and contains only numeric characters</td>
+              </tr>
+              <tr>
+                <td>s.islower()</td>
+                <td>True if all letters are lowercase</td>
+              </tr>
+              <tr>
+                <td>s.isnumeric()</td>
+                <td>True if s is at least one character long and contains only numeric characters</td>
+              </tr>
+              <tr>
+                <td>s.isprintable()</td>
+                <td>True if string s contains only printable characters</td>
+              </tr>
+              <tr>
+                <td>s.istitle()</td>
+                <td>True if s contains letters and first letter of each word is uppercase followed by lowercase</td>
+              </tr>
+              <tr>
+                <td>s.isupper()</td>
+                <td>True if all letters are uppercase</td>
+              </tr>
+              <tr>
+                <td>s.lstrip()</td>
+                <td>Returns s without leading space</td>
+              </tr>
+              <tr>
+                <td>s.replace(x, y)</td>
+                <td>Returns a copy of string s with all x characters replaced with y</td>
+              </tr>
+              <tr>
+                <td>s.rfind(x, y, z)</td>
+                <td>Searches backwards from end of string, or from z to y. returns -1 if substring not found</td>
+              </tr>
+              <tr>
+                <td>s.rindex()</td>
+                <td>Same as s.rfind() but returns an error if substring not found</td>
+              </tr>
+              <tr>
+                <td>s.rstrip()</td>
+                <td>removes tailing spaces</td>
+              </tr>
+              <tr>
+                <td>s.swapcase()</td>
+                <td>Converts uppercase to lowercase and vice versa.</td>
+              </tr>
+              <tr><td>s.strip()</td>
+              <td>Remove leading and trailing spaces</td></tr>
+              <tr>
+                <td>s.title()</td>
+                <td>Return s string with the first letter of each word in uppercase and other letters in lowercase</td>
+              </tr>
+              <tr>
+                <td>s.upper()</td>
+                <td>Returns string with all letters in uppercase</td>
+              </tr>
+            </tbody>
+          </table>
+        </dd>
+      </dl>
+    </div>
+    <h3>Uncovering Dates and Times</h3>
+    <div>
+      <dl>
+        <dd>
+          <ul>
+            <li>We use <em>timestamps</em> to record exactly when a user did something</li>
+            <li>Python <em>doesn't</em> have built-in data types for date and time</li>
+            <li>You need to import the <em>datetime</em> module</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>datetime <em>Classes</em></dt>
+        <dd>
+          <ul>
+            <li><em>datetime.</em><span>date</span>: A date consisting of month, day, and year</li>
+            <li><em>datetime.</em><span>time</span>: A time consisting of hour, minute, second, mircosecond, and optonal time zone.</li>
+            <li><em>datetime.</em><span>datetime</span>: A single item consisting of date, time, and optinal time zone</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Working with <em>dates</em></dt>
+        <dd>
+          <ul>
+            <li>Use <em>today()</em> method to get the date from the <em>computer's internal clock</em></li>
+            <li>You can specify a year, month, adn day inside the <em>date()</em> method like this <span>day(2024,12,22)</span></li>
+            <li>Don't use a leading zero. <span>2024,09,07</span> is <em>wrong</em></li>
+            <li>Use <em>.month, .day, or .year</em> to isolate parts of the date</li>
+            <pre><code class="language-python">
+              import datetime as dt
+              today = dt.date.today()
+              test_day = dt.date(2024, 9, 7)
+
+              print(today)
+              print(test_day)
+              print(test_day.month)
+              print(test_day.day)
+              print(test_day.year)
+            </code></pre>
+            <li>The output is:
+              <pre>
+                2024-12-22
+                2024-09-07
+                9
+                7
+                2024
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Formatting</em> Strings for <em>Dates and Times</em></dt>
+        <table>
+          <thead><th>Directive</th>
+          <th>Description</th>
+          <th>Example Output</th></thead>
+          <tbody>
+            <tr>
+              <td>%a</td>
+              <td>Weekday, abbreviated</td>
+              <td>Sun</td>
+            </tr>
+            <tr>
+              <td>%A</td>
+              <td>Weekday, full</td>
+              <td>Sunday</td>
+            </tr>
+            <tr>
+              <td>%w</td>
+              <td>Weekday number 0-6, 0 is Sunday</td>
+              <td>0</td>
+            </tr>
+           
+            <tr>
+              <td>%d</td>
+              <td>Number od day of the month 01-31</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <td>%b</td>
+              <td>Month name abbreviated</td>
+              <td>Jan</td>
+            </tr>
+            <tr>
+              <td>%B</td>
+              <td>Month name full</td>
+              <td>January</td>
+            </tr>
+            <tr>
+              <td>%m</td>
+              <td>Month number 0-12</td>
+              <td>01</td>
+            </tr>
+            <tr>
+              <td>%y</td>
+              <td>Year without century</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>%Y</td>
+              <td>Year with century</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>%H</td>
+              <td>Hour 00-23</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>%I</td>
+              <td>Hour 00-12</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>%p</td>
+              <td>AM/PM</td>
+              <td>PM</td>
+            </tr>
+            <tr>
+              <td>%M</td>
+              <td>Minute 00-59</td>
+              <td>03</td>
+            </tr>
+            <tr>
+              <td>%S</td>
+              <td>Second 00-59</td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <td>%f</td>
+              <td>Microsecond 000000-999999</td>
+              <td>236478</td>
+            </tr>
+            <tr>
+              <td>%z</td>
+              <td>UTC offset</td>
+              <td>-0500</td>
+            </tr>
+            <tr>
+              <td>%Z</td>
+              <td>Time zone</td>
+              <td>EST</td>
+            </tr>
+            <tr>
+              <td>%j</td>
+              <td>Day number of year 001-366</td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td>%U</td>
+              <td>Week number of year, Sunday first day of week, 00-53</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>%W</td>
+              <td>Week number of year, Monday first day of week, 00-53</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>%c</td>
+              <td>Local version of date and time</td>
+              <td>Tue Dec 21 23:59:45 2024</td>
+            </tr>
+            <tr>
+              <td>%x</td>
+              <td>Local version of date</td>
+              <td>12/22/2024</td>
+            </tr>
+            <tr>
+              <td>%X</td>
+              <td>Local version of time</td>
+              <td>22:16:59</td>
+            </tr>
+            <tr>
+              <td>%%</td>
+              <td>A % character</td>
+              <td>%</td>
+            </tr>
+          </tbody>
+        </table>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Sample <em>Date</em> Format Strings</dt>
+        <table>
+          <thead>
+            <th>Format string</th>
+            <th>Example</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>%a, %b %d %Y</td>
+              <td>Sun, Dec 22 2024</td>
+            </tr>
+            <tr>
+              <td>%m-%d-%y</td>
+              <td>12-22-24</td>
+            </tr>
+            <tr>
+              <td>This %A %B %d</td>
+              <td>This Sunday December 22</td>
+            </tr>
+            <tr>
+              <td>%A %B %d is day number %j of %Y</td>
+              <td>Saturday June 01 is day number 152 of 2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Working with <em>Times</em></dt>
+        <dd>
+          <ul>
+            <li>To work <em>strictly</em> with time data, use <em>datetime.</em><span>time</span> class</li>
+            <pre><code class="language-python">
+              variablename = datetime.time(hour, minute, second, microsecond)
+            </code></pre>
+
+          </ul>
+          <table>
+            <thead>
+              <th>Format String</th>
+              <th>Example</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>%I:%M %p</td>
+                <td>11:59 PM</td>
+              </tr>
+              <tr>
+                <td>%H:%M%S and %f microseconds</td>
+                <td>23:59:59 and 129384 microseconds</td>
+              </tr>
+              <tr><td>%X</td>
+              <td>23:59:59</td></tr>
+            </tbody>
+          </table>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Using <em>Both Date and Time</em></dt>
+        <dd>
+          <ul>
+            <li>To pinpoint a moment in time using both date and time, use the <em>datetime.</em><span>datetime</span> class</li>
+            <li>It support a <em>now()</em> method that grabs current date and time from the computer's clock.</li>
+            <pre><code class="language-python">
+              import datatime as dt
+              print(dt.datetime.now())
+            </code></pre>
+            <li>The output is:
+              <pre>
+                2024-12-22 10:00:40.800331
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Examples for <em>Datetime</em> Strings</dt>
+        <table>
+          <thead>
+            <th>Format String</th>
+            <th>Example</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>%A, %B %d at %I:%M%p</td>
+              <td>Tuesday, December 31 at 11:45PM</td>
+            </tr>
+            <tr>
+              <td>%m/%d/%y at %H:%M</td>
+              <td>12/22/24 at 22:36</td>
+            </tr>
+            <tr>
+              <td>%I:%M %p on %b %d</td>
+              <td>11:59 PM on Dec 31</td>
+            </tr>
+            <tr>
+              <td>%I:%M %p on %m/%d/%y</td>
+              <td>1:59 PM on 12/31/19</td>
+            </tr>
+          </tbody>
+        </table>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Calculating <em>Timespans</em></dt>
+        <dd>
+          <ul>
+            <li>Durations is called <span>timespane</span> in the computer world</li>
+            <li>For timespans, use the <em>datetime.</em><span>timedelta</span> class</li>
+            <li>A <span>timedelta</span> object is created automatically whenever you <em>subtract</em> two dates, times, or datetimes from each other</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Accounting for Time Zones</h3>
+    <div>
+      <dl>
+        <dt>Python has <em>Two Types </em>of Datetimes</dt>
+        <dd>
+          <ul>
+            <li><em>Naive datetime:</em> Any datetime that <em>does not</em> include information about a specific time zone</li>
+            <li><em>Aware datetime:</em> A datetime that includes time zone information</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Working with Time Zones</h3>
+    <div>
+      <dl>
+        <dt>To tell the difference between your time and <em>UTC</em> time:</dt>
+        <dd>
+          <ul>
+            <li>Subtract your time <em>.now()</em> from <em>.utcnow()</em></li>
+            <pre><code class="language-python">
+              import datetime as dt
+              here_now = dt.datetime.now()
+              utc_now = dt.datetime.utcnow()
+
+              time_difference = (utc_now - here_now)
+
+              print(f"My time   : {here_now: %I:%M %p}")
+              print(f"UTC time  : {utc_now: %I:%M %p}")
+              print(f"Difference: {time_difference}")
+            </code></pre>
+            <li>Output is:
+              <pre>
+                My time   : 01:02 PM
+                UTC time  : 06:02 PM
+                Difference: 5:00:00
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h2>Module 12: Controlling the Action | Part 1</h2>
+    
   </body>
 </html>
