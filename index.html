@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
     <link rel="stylesheet" type="text/css" href="style2.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai-sublime.min.css">
     <title>DS231 Final Exam Review</title>
@@ -1666,7 +1663,7 @@
                 </span>
               </ul>
               <pre><code class="language-python">
-                import random as rnd
+import random as rnd
                 </code></pre>
               </li>
               <li>Anything in <em>italic</em> is called <span>syntax chart</span>, information you should supply in your own code. </li>
@@ -1684,7 +1681,7 @@
             <li>You can assign an alias to any module you import as a <em>nickname</em></li>
             <li>Then you can can use the <em>nickname</em> to refer to the module in your code:
               <pre><code class="language-python">
-                answer = rnd.randint(1,8)
+answer = rnd.randint(1,8)
               </code></pre>
             </li>
           </ul>
@@ -1728,10 +1725,10 @@
             <li>Enclose the text in <span>triple quotation marks</span></li>
             <li>Examples:
               <pre><code class="language-python">
-                #This is a single line comment
-                """ This is 
-                    a multiline
-                    comment"""
+#This is a single line comment
+""" This is 
+    a multiline
+    comment"""
               </code></pre>
             </li>
           </ul>
@@ -1775,16 +1772,16 @@
     </div>
     <div>
       <dl>
-        <dt><em>Words</em> (Strings}</dt>
+        <dt><em>Words</em> (Strings)</dt>
         <dd>
           <ul>
             <li>Names, addresses, and all kinds of text</li>
-            <li>Computers can do arithmetic operations on them</li>
+            <li>Computers <em>can't</em> do arithmetic operations on them</li>
             <li>Must be enclosed in single or double quotation marks</li>
             <li>If the string contain a single quote, use double quotes and the opposite is true
               <pre><code class="language-python">
-                firstString = "Ahmed's book is here"
-                secondString = 'I "gave" the book to Ahmed'
+firstString = "Ahmed's book is here"
+secondString = 'I "gave" the book to Ahmed'
               </code></pre>
             </li>
           </ul>
@@ -1799,8 +1796,8 @@
             <li>Can either be <span>True</span> or <em>Flase</em></li>
             <li>In Python, True and False values are stored in <em>variables</em>
             <pre><code class="language-python">
-              x = True
-              y = False
+x = True
+y = False
             </code></pre></li>
             <li>Not enclosed in quotation mark, and the first letter is capital</li>
           </ul>
@@ -1977,7 +1974,7 @@
           <ul>
             <li>Assigns value to a variable</li>
             <pre><code class="language-python">
-              x = 10 # Assigning the value 10 to variable x
+x = 10 # Assigning the value 10 to variable x
             </code></pre>
           </ul>
         </dd>
@@ -2007,12 +2004,12 @@
           <ul>
             <li>A line of code ends with <span>line break</span> or a <span>semicolon</span></li>
             <pre><code class="language-python">
-              #Using line breaks
-              first_name = "Ahmed"
-              last_name = "Harbi"
+#Using line breaks
+first_name = "Ahmed"
+last_name = "Harbi"
 
-              #Using semicolon
-              first_name = "Ahmed"; last_name = "Harbi"
+#Using semicolon
+first_name = "Ahmed"; last_name = "Harbi"
             </code></pre>
             <li>The code will <em>run the same</em> in both cases</li>
           </ul>
@@ -2216,8 +2213,8 @@
           <ul>
             <li><em>f-string</em> is the easiet way to format data in Python</li>
             <pre><code class="language-python">
-              username = "Mohammed"
-              print(f"Hello {username})
+username = "Mohammed"
+print(f"Hello {username})
             </code></pre>
             <li>The output is: Hello Mohammed</li>
             <li>The text <span>(Hello)</span> is called the <em>literal part</em>, and is displayed literally.</li>
@@ -2233,9 +2230,9 @@
         <dd>
           <ul>
             <pre><code class="language-python">
-              quantity = 100
-              unit_price = 14.997
-              print(f"Subtotal: ${quantity * unit_price:,.2f}")
+quantity = 100
+unit_price = 14.997
+print(f"Subtotal: ${quantity * unit_price:,.2f}")
             </code></pre>
             <li>Output is: Subtotal: $1,499.70</li>
             <li>the <span>comma</span> tells Pyton to show commas in thousands places</li>
@@ -2250,8 +2247,8 @@
         <dd>
           <ul>
             <pre><code class="language-python">
-              sales_tax_rate = 0.065
-              print(f"Sales Tax Rate {sales_tax_rate:.2%}")
+sales_tax_rate = 0.065
+print(f"Sales Tax Rate {sales_tax_rate:.2%}")
             </code></pre>
             <li>Output is: Sales Tax Rate 6.50%</li>
           </ul>
@@ -2265,23 +2262,23 @@
           <ul>
             <li>Use <em>/n</em> where you want a line break</li>
             <pre><code class="language-python">
-              user1 = "Ahmed"
-              user2 = "Mohammed"
-              user3 = "Hussam"
-              output = f"{user1}\n{user2}\n{user3}"
-              print(output)
+user1 = "Ahmed"
+user2 = "Mohammed"
+user3 = "Hussam"
+output = f"{user1}\n{user2}\n{user3}"
+print(output)
             </code></pre>
             <li>The output is: <br>Ahmed <br> Mohammed <br> Hussam
             </li>
             <li>Use <em>triple quotation marks</em> also:</li>
             <pre><code class="language-python">
-              user1 = "Ahmed"
-              user2 = "Mohammed"
-              user3 = "Hussam"
-              output = f"""{user1} 
-              {user2} 
-              {user3}"""
-              print(output)
+user1 = "Ahmed"
+user2 = "Mohammed"
+user3 = "Hussam"
+output = f"""{user1} 
+{user2} 
+{user3}"""
+print(output)
             </code></pre>
             <li>Same output</li>
           </ul>
@@ -2298,20 +2295,20 @@
             <li><span>^</span> for centered
             </li>
             <pre><code class="language-python">
-              subtotal = 1598.40
-              sales_tax = 103.90
-              total = 1702.30
-              print(f"""
-                    Subtotal:   ${subtotal:>9,.2f}
-                    Sales Tax:  ${sales_tax:>9,.2f}
-                    Total:      ${total:>9,.2f}
-                    """)
+subtotal = 1598.40
+sales_tax = 103.90
+total = 1702.30
+print(f"""
+      Subtotal:   ${subtotal:>9,.2f}
+      Sales Tax:  ${sales_tax:>9,.2f}
+      Total:      ${total:>9,.2f}
+      """)
             </code></pre>
             <li>The output is:
               <pre>
-                Subtotal:   $  1,598.40
-                Sales Tax:  $    103.90
-                Total:      $  1,702.30
+Subtotal:   $  1,598.40
+Sales Tax:  $    103.90
+Total:      $  1,702.30
               </pre>
             </li>
           </ul>
@@ -2357,14 +2354,14 @@
                   </tbody></table></li>
                 <li>
                   <pre><code class="language-python">
-                    x = 255
-                    print(bin(x))
-                    print(0b11111111)
+x = 255
+print(bin(x))
+print(0b11111111)
                   </code></pre></li>
                   <li>Output is:
                     <pre>
-                      0b11111111
-                      255
+0b11111111
+255
                     </pre>
                   </li>
               </ul>
@@ -2384,12 +2381,12 @@
             <li>Space is represented by quotation marks with one space between them <em>" "</em></li>
             <li>
               <pre><code class="language-python">
-                print("My" + " " + "name" + " " + "is" + " " + "Mohammed")
+print("My" + " " + "name" + " " + "is" + " " + "Mohammed")
               </code></pre>
             </li>
             <li>Output is:
               <pre>
-                My Name is Mohammed
+My Name is Mohammed
               </pre>
             </li>
           </ul>
@@ -2404,19 +2401,19 @@
             <li>Use the built-in <em>len()</em> function</li>
             <li>
               <pre><code class="language-python">
-                s1 = ""
-                s2 = " "
-                s3 = "A B C"
-                print(len(s1))
-                print(len(s2))
-                print(len(s3))
+s1 = ""
+s2 = " "
+s3 = "A B C"
+print(len(s1))
+print(len(s2))
+print(len(s3))
               </code></pre>
             </li>
             <li>Output is:
               <pre>
-                0
-                1
-                5
+0
+1
+5
               </pre>
             </li>
           </ul>
@@ -2599,23 +2596,23 @@
             <li>Don't use a leading zero. <span>2024,09,07</span> is <em>wrong</em></li>
             <li>Use <em>.month, .day, or .year</em> to isolate parts of the date</li>
             <pre><code class="language-python">
-              import datetime as dt
-              today = dt.date.today()
-              test_day = dt.date(2024, 9, 7)
+import datetime as dt
+today = dt.date.today()
+test_day = dt.date(2024, 9, 7)
 
-              print(today)
-              print(test_day)
-              print(test_day.month)
-              print(test_day.day)
-              print(test_day.year)
+print(today)
+print(test_day)
+print(test_day.month)
+print(test_day.day)
+print(test_day.year)
             </code></pre>
             <li>The output is:
               <pre>
-                2024-12-22
-                2024-09-07
-                9
-                7
-                2024
+2024-12-22
+2024-09-07
+9
+7
+2024
               </pre>
             </li>
           </ul>
@@ -2791,7 +2788,7 @@
           <ul>
             <li>To work <em>strictly</em> with time data, use <em>datetime.</em><span>time</span> class</li>
             <pre><code class="language-python">
-              variablename = datetime.time(hour, minute, second, microsecond)
+variablename = datetime.time(hour, minute, second, microsecond)
             </code></pre>
 
           </ul>
@@ -2824,12 +2821,12 @@
             <li>To pinpoint a moment in time using both date and time, use the <em>datetime.</em><span>datetime</span> class</li>
             <li>It support a <em>now()</em> method that grabs current date and time from the computer's clock.</li>
             <pre><code class="language-python">
-              import datatime as dt
-              print(dt.datetime.now())
+import datatime as dt
+print(dt.datetime.now())
             </code></pre>
             <li>The output is:
               <pre>
-                2024-12-22 10:00:40.800331
+2024-12-22 10:00:40.800331
               </pre>
             </li>
           </ul>
@@ -2897,21 +2894,21 @@
           <ul>
             <li>Subtract your time <em>.now()</em> from <em>.utcnow()</em></li>
             <pre><code class="language-python">
-              import datetime as dt
-              here_now = dt.datetime.now()
-              utc_now = dt.datetime.utcnow()
+import datetime as dt
+here_now = dt.datetime.now()
+utc_now = dt.datetime.utcnow()
 
-              time_difference = (utc_now - here_now)
+time_difference = (utc_now - here_now)
 
-              print(f"My time   : {here_now: %I:%M %p}")
-              print(f"UTC time  : {utc_now: %I:%M %p}")
-              print(f"Difference: {time_difference}")
+print(f"My time   : {here_now: %I:%M %p}")
+print(f"UTC time  : {utc_now: %I:%M %p}")
+print(f"Difference: {time_difference}")
             </code></pre>
             <li>Output is:
               <pre>
-                My time   : 01:02 PM
-                UTC time  : 06:02 PM
-                Difference: 5:00:00
+My time   : 01:02 PM
+UTC time  : 06:02 PM
+Difference: 5:00:00
               </pre>
             </li>
           </ul>
@@ -2919,6 +2916,426 @@
       </dl>
     </div>
     <h2>Module 12: Controlling the Action | Part 1</h2>
-    
+    <h3>Main Operators for Controlling the Action</h3>
+    <div>
+      <dl>
+        <dt>You control what you program by <em>making decisions</em></dt>
+        <dd>
+          <ul>
+            <li>You use operators to <span>make comparisons</span></li>
+            <li>These operators are called <span>relational operators</span> or <span>comparison operators</span></li>
+            <li>Python also has <em>three logical operators</em></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Python <em>Comparison</em> Operators for <em>Decision-Making</em></dt>
+        <table>
+          <thead>
+            <th>Operator</th>
+            <th>Meaning</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>==</td>
+              <td>Is equal to</td>
+            </tr>
+            <tr>
+              <td>!=</td>
+              <td>Is not equal to</td>
+            </tr>
+            <tr>
+              <td>&lt;</td>
+              <td>Is less than</td>
+            </tr>
+            <tr>
+              <td>&gt;</td>
+              <td>Is greater than</td>
+            </tr>
+            <tr>
+              <td>&lt;=</td>
+              <td>Is less than or equal to</td>
+            </tr>
+            <tr>
+              <td>&gt;=</td>
+              <td>Is greater than or equal to</td>
+            </tr>
+          </tbody>
+        </table>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Python <em>Logical</em> Operators</dt>
+        <table>
+          <thead>
+            <tr>
+              <th>Operator</th>
+              <th>Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>and</td>
+              <td>Both are true</td>
+            </tr>
+            <tr>
+              <td>or</td>
+              <td>One of the other is true</td>
+            </tr>
+            <tr>
+              <td>not</td>
+              <td>Is not true</td>
+            </tr>
+          </tbody>
+        </table>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>All these operators are often used with <em>if...then...else</em></dt>
+      </dl>
+    </div>
+    <h3>Making Decisions with if</h3>
+    <div>
+      <dl>
+        <dt>Syntax for <em>if</em></dt>
+        <dd>
+        <ul>
+          <pre><code class="language-python">
+if condition: do this
+do this no matter what
+          </code></pre>
+          <li>The first line is executed if the condition is <span>true</span></li>
+          <li>The second line is executed regarless of the condition outcome</li>
+        </dd>
+        </ul>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Use <em>Indentation</em> to do more than one thing is the condition is true:</dt>
+        <dd>
+          <ul>
+            <pre><code class="language-python">
+if x == 0:
+    x = x +1
+    print("This line will also execute")
+    print("This line is also part of the if statement block")
+print("This line is not part of the block")
+            </code></pre>
+            <li>All indented lines will execute if the condition is <span>true</span>, and will <em>not</em> execute if the condition is <em>false</em></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Adding <em>else</em> to your <em>if</em> logic</dt>
+        <dd>
+          <ul>
+            <li>If the condition is <span>true</span>, execute the block after <em>if</em>. Ignore the block after <em>else</em></li>
+            <li>If the condition is <em>false</em>, execute the block after <em>else</em>. Ignore the block after <em>if</em></li>
+            <pre><code class="language-python">
+if x > 5:
+    print("This will only be printed if condition is true.")
+else:
+    print("This will only be printed if condition is false.")
+            </code></pre>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Handling <em>Multiple</em> <span>else</span> statements with <em>elif</em></dt>
+        <dd>
+          <ul>
+            <li>Used when <em>if...else</em> is not enough</li>
+            <pre><code class="language-python">
+if name == "Ahmed":
+    print("Hi Ahmed")
+elif name == "Mohammed":
+    print("Hi Mohammed")
+elif name == "Hussam":
+    print("Hussam is eating Fish!")
+else:
+    print("The last else is optional")
+            </code></pre>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h2>Module 13: Controlling Action | Part II</h2>
+    <h3>Repeating a Process with for</h3>
+    <div>
+      <dl>
+        <dt><em>Looping</em> through <span>numbers</span> in a <em>range</em></dt>
+        <dd>
+          <ul>
+            <li>Use the <em>for loop</em> to repeat a line of code, or several lines as many times as you like</li>
+            <li>If you <em>know how many times</em> you want to repeat the loop, use the following syntax:</li>
+            <pre><code class="language-python">
+for x in range(y):
+  do this
+  do this
+  ...
+un-indented code will execute after the loop is complete
+            </code></pre>
+            <li>Examples:</li>
+            <pre><code class="language-python">
+for x in range(3):
+    print(x)
+print("All done")
+            </code></pre>
+            <li>Output is:
+              <pre>
+0
+1
+2
+All done
+              </pre>
+            </li>
+            <pre><code class="language-python">
+for x in range(1, 4):
+    print(x)
+print("All done")
+            </code></pre>
+            <li>Output is:
+              <pre>
+1
+2
+3
+All done
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Looping</em> through a <span>String</span></dt>
+        <dd>
+          <ul>
+            <li>Using <span>range()</span> in a for loop is <em>optional</em></li>
+            <li>You can replace <span>range</span> with a <span>string</span></li>
+            <li>The loop will repeat for every <span>character</span> in the <span>string</span></li>
+            <pre><code class="language-python">
+name = "Ahmed"
+for x in name:
+    print(x)
+print("Done")
+            </code></pre>
+            <li>Output is:
+              <pre>
+A
+h
+m
+e
+d
+Done
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Looping</em> Through a <span>List</span></dt>
+        <dd>
+          <ul>
+            <li>A <span>list</span> is any group or items separated by commas, inside square brackets</li>
+            <li>You can loop through a <span>list</span> like the following example:</li>
+            <pre><code class="language-python">
+for x in ["My", "name", "is", "Mohammed"]:
+    print(x)
+print("Done")
+            </code></pre>
+            <li>Output is:
+              <pre>
+My
+name
+is
+Mohammed
+Done
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Bailing out</em> of a loop</dt>
+        <dd>
+          <ul>
+            <li>You can force a loop to stop early if some condition is met by using the <em>break statment</em></li>
+            <pre><code class="language-python">
+for x in range(5):
+  if x == 3:
+    break
+  print(x)
+print("Done")
+            </code></pre>
+            <li>Output is:
+              <pre>
+0
+1
+2
+Done
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Looping with <em>continue</em></dt>
+        <dd>
+          <ul>
+            <li>Use <em>continue</em> to skip the <span>current iteration</span> of the loop</li>
+            <li>The loop will continue with the next iteration:</li>
+            <pre><code class="language-python">
+for x in range(5):
+  if x == 3:
+    continue
+  print(x)
+print("Done")
+            </code></pre>
+            <li>Output is:
+              <pre>
+0
+1
+2
+4
+Done
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Nesting</em> Loops</dt>
+        <dd>
+          <ul>
+            <li>You can put loops <em>inside</em> other loops</li>
+            <li>Make sure your indentation is correct:</li>
+            <pre><code class="language-python">
+for x in ["First", "Second", "Third"]:
+    print(x)
+    for y in range(1, 4):
+        print(y)
+print("both loops are done")
+            </code></pre>
+            <li>Output is:
+              <pre>
+First
+1
+2
+3
+Second
+1
+2
+3
+Third
+1
+2
+3
+both loops are done
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <h3>Looping with while</h3>
+    <div>
+      <dl>
+        <dt><em>while</em> loop <em>syntax</em></dt>
+        <dd>
+          <ul>
+            <li>With <em>while</em> loops, you have to make sure that the <span>condition</span> that makes the loop stop <span>happens eventually</span></li>
+            <li>Otherwise, you get an <em>infinite</em> loop</li>
+            <pre><code class="language-python">
+counter = 5
+while counter < 11:
+    print(counter)
+    counter += 1
+            </code></pre>
+            <li>Output is:
+              <pre>
+5
+6
+7
+8
+9
+10
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>Starting <em>while</em> loops over with <em>continue</em></dt>
+        <dd>
+          <ul>
+            <li>You can use <em>if</em> and <em>continue</em> in a <em>while</em> loop to <span>skip back to the top of the loop</span></li>
+            <pre><code class="language-python">
+counter = 0
+
+while counter < 6:
+    counter += 1
+    if counter == 3:
+        continue
+    print(counter)
+            </code></pre>
+            <li>Output is:
+              <pre>
+1
+2
+4
+5
+6
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt><em>Breaking</em> <span>while</span> loops with <em>break</em></dt>
+        <dd>
+          <ul>
+            <li>This is similar to <span>for</span> loops</li>
+            <pre><code class="language-python">
+counter = 0
+while counter < 6:
+    if counter == 4:
+        break
+    print(counter)
+    counter += 1
+            </code></pre>
+            <li>Output is:
+              <pre>
+0
+1
+2
+3
+              </pre>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
   </body>
 </html>
