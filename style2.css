@@ -131,7 +131,7 @@ pre {
     overflow: hidden;
     font-size: large;
     text-align: left;
-    margin:0;
+   
     
 }
 
@@ -168,6 +168,52 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #f1f1f1;
 }
+
+.collapsible-content {
+    display: none; /* Content starts hidden */
+  }
+  
+/* Arrow functionality for h2 headers */
+h2.collapsible-header {
+    position: relative; /* Ensure the pseudo-element positions relative to the h2 */
+  }
+  
+  h2.collapsible-header::before {
+    content: '\25B6'; /* Right-pointing triangle for collapsed state */
+    position: absolute; /* Position relative to the h2 */
+    left: 10px; /* Adjust spacing to position arrow close to text */
+    top: 50%; /* Center the arrow vertically */
+    transform: translateY(-50%); /* Proper vertical alignment */
+    font-size: 1.2em; /* Arrow size for h2 */
+    color: #f0f4f8; /* Match h2 text color */
+    transition: transform 0.3s ease; /* Smooth rotation for expanded state */
+  }
+  
+  h2.collapsible-header.active::before {
+    content: '\25BC'; /* Downward-pointing triangle for expanded state */
+  }
+  
+  /* Arrow functionality for h3 headers */
+h3.collapsible-header {
+    position: relative; /* Ensure the pseudo-element positions relative to the text */
+  }
+  
+  h3.collapsible-header::before {
+    content: '\25B6'; /* Right-pointing triangle for collapsed state */
+    position: absolute; /* Position relative to the h3 element */
+    left: -20px; /* Adjust spacing to position arrow close to text */
+    top: 50%; /* Center vertically with the text */
+    transform: translateY(-50%); /* Correct vertical alignment */
+    font-size: 1em; /* Slightly smaller size for h3 */
+    color: #003366; /* Match h3 text color */
+    transition: transform 0.3s ease; /* Smooth animation for arrow */
+  }
+  
+  h3.collapsible-header.active::before {
+    content: '\25BC'; /* Downward-pointing triangle for expanded state */
+  }
+  
+  
 
 /* Optional: Change font size for mobile readability */
 @media (max-width: 768px) {
